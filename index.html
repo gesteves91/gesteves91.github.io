@@ -1,55 +1,119 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Identity by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	
+	Personal Website for Geanderson E. Santos
 -->
-<html>
+<html lang="en">
 	<head>
-		<title>Geanderson E. Santos</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Personal website of Geanderson E. Santos - Computer Geek, Researcher, and Developer" />
+		
+		<title>Geanderson E. Santos</title>
+		
+		<!-- Stylesheets -->
 		<link rel="stylesheet" href="assets/css/maincss.css" />
 		<link rel="shortcut icon" type="image/png" href="images/ico.ico" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<noscript>
+			<link rel="stylesheet" href="assets/css/noscript.css" />
+		</noscript>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/geanderson_2.png" alt="" /></span>
-							<h1>Geanderson Santos</h1>
-							<p>Computer Geek</p>
-						</header>
-						<footer>
-							<ul class="icons">
-								<li><a href="https://github.com/gesteves91" class="icon brands fa fa-github-alt">GitHub</a></li>
-								<li><a href="https://www.linkedin.com/in/geandersonesteves" class="icon brands fa-linkedin-in">LinkedIn</a></li>
-								<li><a href="https://stackoverflow.com/users/4224495/geanderson-esteves" class="icon brands fa-stack-overflow">StackOverflow</a></li>
-								<li><a href="https://www.researchgate.net/profile/Geanderson-Dos-Santos" class="icon brands fa-researchgate">ResearchGate</a></li>
-							</ul>
-						</footer>
-					</section>
+		<!-- Main Wrapper -->
+		<div id="wrapper">
+			
+			<!-- Main Content Section -->
+			<section id="main">
+				
+				<!-- Profile Header -->
+				<header>
+					<span class="avatar">
+						<img src="images/geanderson_2.png" alt="Geanderson Santos profile photo" />
+					</span>
+					<h1>Geanderson Santos</h1>
+					<p>Computer Geek</p>
+				</header>
+				
+				<!-- Social Media Links -->
+				<footer>
+					<ul class="icons">
+						<li>
+							<a 
+								href="https://github.com/gesteves91" 
+								class="icon brands fa fa-github-alt"
+								rel="noopener noreferrer"
+								target="_blank"
+								aria-label="Visit my GitHub profile"
+							>
+								GitHub
+							</a>
+						</li>
+						<li>
+							<a 
+								href="https://www.linkedin.com/in/geandersonesteves" 
+								class="icon brands fa-linkedin-in"
+								rel="noopener noreferrer"
+								target="_blank"
+								aria-label="Visit my LinkedIn profile"
+							>
+								LinkedIn
+							</a>
+						</li>
+						<li>
+							<a 
+								href="https://stackoverflow.com/users/4224495/geanderson-esteves" 
+								class="icon brands fa-stack-overflow"
+								rel="noopener noreferrer"
+								target="_blank"
+								aria-label="Visit my Stack Overflow profile"
+							>
+								StackOverflow
+							</a>
+						</li>
+						<li>
+							<a 
+								href="https://www.researchgate.net/profile/Geanderson-Dos-Santos" 
+								class="icon brands fa-researchgate"
+								rel="noopener noreferrer"
+								target="_blank"
+								aria-label="Visit my ResearchGate profile"
+							>
+								ResearchGate
+							</a>
+						</li>
+					</ul>
+				</footer>
+				
+			</section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; G.E. Santos</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+			<!-- Site Footer -->
+			<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; G.E. Santos</li>
+					<li>
+						Design: <a href="http://html5up.net" rel="noopener noreferrer" target="_blank">HTML5 UP</a>
+					</li>
+				</ul>
+			</footer>
 
-			</div>
+		</div>
 
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
+		<!-- JavaScript -->
+		<script>
+			// Remove preload class after page loads for smooth animation
+			if ('addEventListener' in window) {
+				window.addEventListener('load', function() {
+					document.body.className = document.body.className.replace(/\bis-preload\b/, '');
+				});
+				
+				// Add IE detection class if needed
+				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+			}
+		</script>
 
 	</body>
 </html>
