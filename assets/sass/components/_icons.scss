@@ -50,9 +50,16 @@
 
 		@include breakpoint('<=xsmall') {
 			li {
+				padding: 0.675em 0.25em;
+
 				a {
+					width: 3em;
+					height: 3em;
+					line-height: 3em;
+					text-indent: 3em;
+
 					&:before {
-						font-size: 1.5rem;
+						font-size: 1.3rem;
 					}
 				}
 			}
