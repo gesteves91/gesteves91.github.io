@@ -802,19 +802,8 @@
 
 		@media screen and (max-width: 480px) {
 
-			ul.icons li {
-				padding: 0.675em 0.25em;
-			}
-
-			ul.icons li a {
-				width: 3em;
-				height: 3em;
-				line-height: 3em;
-				text-indent: 3em;
-			}
-
 			ul.icons li a:before {
-				font-size: 1.3rem;
+				font-size: 1.5rem;
 			}
 
 		}
