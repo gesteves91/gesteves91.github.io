@@ -1,0 +1,24 @@
+{
+	"name": "Geanderson Santos - Personal Website",
+	"short_name": "Geanderson Santos",
+	"description": "Personal website of Geanderson E. Santos - Computer Geek, Researcher, and Developer",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#ff7496",
+	"orientation": "portrait-primary",
+	"icons": [
+		{
+			"src": "images/favicon.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "images/ico.ico",
+			"sizes": "32x32",
+			"type": "image/x-icon"
+		}
+	]
+}
+

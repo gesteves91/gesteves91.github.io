@@ -801,6 +801,7 @@
 				-webkit-transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 				-ms-transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 				transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+				outline: none;
 				}
 
 				ul.icons li a:hover {
@@ -810,6 +811,23 @@
 				-ms-transform: translateY(-5px) scale(1.05);
 				transform: translateY(-5px) scale(1.05);
 				box-shadow: 0 5px 15px rgba(255, 116, 150, 0.3);
+				}
+
+				/* Enhanced focus state for keyboard navigation only */
+				ul.icons li a:focus-visible {
+					border-color: #ff7496;
+					-moz-transform: translateY(-5px) scale(1.05);
+					-webkit-transform: translateY(-5px) scale(1.05);
+					-ms-transform: translateY(-5px) scale(1.05);
+					transform: translateY(-5px) scale(1.05);
+					box-shadow: 0 5px 15px rgba(255, 116, 150, 0.3);
+					outline: 2px solid #ff7496;
+					outline-offset: 3px;
+				}
+
+				ul.icons li a:hover:before,
+				ul.icons li a:focus-visible:before {
+					text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
 				}
 
 		@media screen and (max-width: 480px) {
@@ -1094,6 +1112,14 @@
 			body.is-preload #main header p,
 			body.is-preload #main footer {
 				opacity: 1;
+				-moz-transform: none;
+				-webkit-transform: none;
+				-ms-transform: none;
+				transform: none;
+			}
+
+			ul.icons li a:hover,
+			ul.icons li a:focus-visible {
 				-moz-transform: none;
 				-webkit-transform: none;
 				-ms-transform: none;

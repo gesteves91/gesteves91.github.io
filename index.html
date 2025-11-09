@@ -11,8 +11,26 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Personal website of Geanderson E. Santos - Computer Geek, Researcher, and Developer" />
+		<meta name="theme-color" content="#ff7496" />
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
 		
 		<title>Geanderson Santos</title>
+		
+		<!-- Canonical URL -->
+		<link rel="canonical" href="https://www.geanderson.me/" />
+		
+		<!-- Performance: Preconnect to external domains -->
+		<link rel="preconnect" href="https://github.com" />
+		<link rel="preconnect" href="https://www.linkedin.com" />
+		<link rel="preconnect" href="https://stackoverflow.com" />
+		<link rel="preconnect" href="https://www.researchgate.net" />
+		<link rel="dns-prefetch" href="https://github.com" />
+		<link rel="dns-prefetch" href="https://www.linkedin.com" />
+		<link rel="dns-prefetch" href="https://stackoverflow.com" />
+		<link rel="dns-prefetch" href="https://www.researchgate.net" />
+		
+		<!-- Web App Manifest -->
+		<link rel="manifest" href="manifest.json" />
 		
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="assets/css/maincss.css" />
@@ -55,23 +73,23 @@
 	<body class="is-preload">
 
 		<!-- Main Wrapper -->
-		<div id="wrapper">
+			<div id="wrapper">
 			
 			<!-- Main Content Section -->
-			<section id="main">
+					<section id="main">
 				
 				<!-- Profile Header -->
-				<header>
+						<header>
 					<span class="avatar">
-						<img src="images/geanderson.png" alt="Geanderson Santos profile photo" />
+						<img src="images/geanderson.png" alt="Geanderson Santos profile photo" fetchpriority="high" />
 					</span>
-					<h1>Geanderson Santos</h1>
+							<h1>Geanderson Santos</h1>
 					<p>Curious Engineer</p>
-				</header>
+						</header>
 				
 				<!-- Social Media Links -->
-				<footer>
-					<ul class="icons">
+						<footer>
+							<ul class="icons">
 						<li>
 							<a 
 								href="https://github.com/gesteves91" 
@@ -116,35 +134,43 @@
 								ResearchGate
 							</a>
 						</li>
-					</ul>
-				</footer>
+							</ul>
+						</footer>
 				
-			</section>
+					</section>
 
 			<!-- Site Footer -->
-			<footer id="footer">
-				<ul class="copyright">
-					<li>&copy; G.E. Santos</li>
+					<footer id="footer">
+						<ul class="copyright">
+					<li>&copy; <span id="copyright-year"></span> G.E. Santos</li>
 					<li>
 						Design: <a href="https://html5up.net" rel="noopener noreferrer" target="_blank">HTML5 UP</a>
 					</li>
-				</ul>
-			</footer>
+						</ul>
+					</footer>
 
-		</div>
+			</div>
 
 		<!-- JavaScript -->
-		<script>
+			<script>
 			// Remove preload class after page loads for smooth animation
-			if ('addEventListener' in window) {
+				if ('addEventListener' in window) {
 				window.addEventListener('load', function() {
 					document.body.className = document.body.className.replace(/\bis-preload\b/, '');
 				});
 				
 				// Add IE detection class if needed
-				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-			}
-		</script>
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+				
+				// Update copyright year automatically
+				(function() {
+					var yearElement = document.getElementById('copyright-year');
+					if (yearElement) {
+						yearElement.textContent = new Date().getFullYear();
+					}
+				})();
+			</script>
 
 	</body>
 </html>
